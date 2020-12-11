@@ -1,0 +1,735 @@
+{
+  "@id": "urn:bluegitSystemInformationCollector:BluegitSystemInformationCollector_135:4",
+  "@type": "CapabilityModel",
+  "implements": [
+    {
+      "@id": "urn:bluegitSystemInformationCollector:BluegitSystemInformationCollector_135:6fbq08aii:1",
+      "@type": "InterfaceInstance",
+      "name": "DeviceInformation_3eb",
+      "schema": {
+        "@id": "urn:azureiot:DeviceManagement:DeviceInformation:1",
+        "@type": "Interface",
+        "displayName": {
+          "en": "Device information"
+        },
+        "contents": [
+          {
+            "@id": "urn:azureiot:DeviceManagement:DeviceInformation:totalStorage:1",
+            "@type": "Property",
+            "comment": "Total available storage on the device in kilobytes. Ex. 2048000 kilobytes.",
+            "displayName": {
+              "en": "Total storage"
+            },
+            "name": "totalStorage",
+            "displayUnit": {
+              "en": "kilobytes"
+            },
+            "schema": "long"
+          },
+          {
+            "@id": "urn:azureiot:DeviceManagement:DeviceInformation:totalMemory:1",
+            "@type": "Property",
+            "comment": "Total available memory on the device in kilobytes. Ex. 256000 kilobytes.",
+            "displayName": {
+              "en": "Total memory"
+            },
+            "name": "totalMemory",
+            "displayUnit": {
+              "en": "kilobytes"
+            },
+            "schema": "long"
+          },
+          {
+            "@id": "urn:azureiot:DeviceManagement:DeviceInformation:manufacturer:1",
+            "@type": "Property",
+            "comment": "Company name of the device manufacturer. This could be the same as the name of the original equipment manufacturer (OEM). Ex. Contoso.",
+            "displayName": {
+              "en": "Manufacturer"
+            },
+            "name": "manufacturer",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:azureiot:DeviceManagement:DeviceInformation:model:1",
+            "@type": "Property",
+            "comment": "Device model name or ID. Ex. Surface Book 2.",
+            "displayName": {
+              "en": "Device model"
+            },
+            "name": "model",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:azureiot:DeviceManagement:DeviceInformation:swVersion:1",
+            "@type": "Property",
+            "comment": "Version of the software on your device. This could be the version of your firmware. Ex. 1.3.45",
+            "displayName": {
+              "en": "Software version"
+            },
+            "name": "swVersion",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:azureiot:DeviceManagement:DeviceInformation:osName:1",
+            "@type": "Property",
+            "comment": "Name of the operating system on the device. Ex. Windows 10 IoT Core.",
+            "displayName": {
+              "en": "Operating system name"
+            },
+            "name": "osName",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:azureiot:DeviceManagement:DeviceInformation:processorArchitecture:1",
+            "@type": "Property",
+            "comment": "Architecture of the processor on the device. Ex. x64 or ARM.",
+            "displayName": {
+              "en": "Processor architecture"
+            },
+            "name": "processorArchitecture",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:azureiot:DeviceManagement:DeviceInformation:processorManufacturer:1",
+            "@type": "Property",
+            "comment": "Name of the manufacturer of the processor on the device. Ex. Intel.",
+            "displayName": {
+              "en": "Processor manufacturer"
+            },
+            "name": "processorManufacturer",
+            "schema": "string"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "urn:bluegitSystemInformationCollector:BluegitSystemInformationCollector_135:rnow4rjjh:2",
+      "@type": "InterfaceInstance",
+      "displayName": {
+        "en": "Monitor Data"
+      },
+      "name": "SystemInformationCollectorV2_40y",
+      "schema": {
+        "@id": "urn:bluegitMonitorData:MonitorData:3",
+        "@type": "Interface",
+        "displayName": {
+          "en": "Monitor Data"
+        },
+        "contents": [
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUCoresTemperature:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Cores Temperature"
+            },
+            "name": "CPUCoresTemperature",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUMaxTemperature:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Max Temperature"
+            },
+            "name": "CPUMaxTemperature",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUMainTemperature:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Main Temperature"
+            },
+            "name": "CPUMainTemperature",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUSpeedAvg:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Speed Avg"
+            },
+            "name": "CPUSpeedAvg",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUSpeedMin:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Speed Min"
+            },
+            "name": "CPUSpeedMin",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUSpeedMax:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Speed Max"
+            },
+            "name": "CPUSpeedMax",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUCacheL1d:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Cache L1d"
+            },
+            "name": "CPUCacheL1d",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUCacheL1i:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Cache L1i"
+            },
+            "name": "CPUCacheL1i",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUCacheL2:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Cache L2"
+            },
+            "name": "CPUCacheL2",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CPUCacheL3:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "CPU Cache L3"
+            },
+            "name": "CPUCacheL3",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemoryTotal:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Total"
+            },
+            "name": "MemoryTotal",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemoryFree:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Free"
+            },
+            "name": "MemoryFree",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemoryUsed:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Used"
+            },
+            "name": "MemoryUsed",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemoryActive:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Active"
+            },
+            "name": "MemoryActive",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemoryAvailable:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Available:"
+            },
+            "name": "MemoryAvailable",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemoryBuffers:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Buffers"
+            },
+            "name": "MemoryBuffers",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemoryCached:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Cached"
+            },
+            "name": "MemoryCached",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemorySlab:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Slab"
+            },
+            "name": "MemorySlab",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemoryBufferCache:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Buffer Cache"
+            },
+            "name": "MemoryBufferCache",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemorySwapTotal:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Swap Total"
+            },
+            "name": "MemorySwapTotal",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemorySwapUsed:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Swap Used"
+            },
+            "name": "MemorySwapUsed",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:MemorySwapFree:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Memory Swap Free"
+            },
+            "name": "MemorySwapFree",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:HasBattery:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Has Battery"
+            },
+            "name": "HasBattery",
+            "schema": "boolean"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryCycleCount:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Cycle Count"
+            },
+            "name": "BatteryCycleCount",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryIsCharging:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Is Charging:"
+            },
+            "name": "BatteryIsCharging",
+            "schema": "boolean"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryDesignedCapacity:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Designed Capacity"
+            },
+            "name": "BatteryDesignedCapacity",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryMaxCapacity:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Max Capacity"
+            },
+            "name": "BatteryMaxCapacity",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryCurrentCapacity:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Current Capacity"
+            },
+            "name": "BatteryCurrentCapacity",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryVoltage:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Voltage"
+            },
+            "name": "BatteryVoltage",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryCapacityUnit:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Capacity Unit"
+            },
+            "name": "BatteryCapacityUnit",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryPercent:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Percent"
+            },
+            "name": "BatteryPercent",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryTimeRemaining:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Time Remaining"
+            },
+            "name": "BatteryTimeRemaining",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryAcConnected:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Ac Connected"
+            },
+            "name": "BatteryAcConnected",
+            "schema": "boolean"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryType:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Type"
+            },
+            "name": "BatteryType",
+            "schema": "boolean"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryModel:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Model"
+            },
+            "name": "BatteryModel",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatteryManufacturer:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Manufacturer"
+            },
+            "name": "BatteryManufacturer",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:BatterySerial:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Battery Serial"
+            },
+            "name": "BatterySerial",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadAvg:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load Avg"
+            },
+            "name": "CurrentLoadAvg",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoad:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load"
+            },
+            "name": "CurrentLoad",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadUser:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load User"
+            },
+            "name": "CurrentLoadUser",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadSystem:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load System"
+            },
+            "name": "CurrentLoadSystem",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadNice:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load Nice"
+            },
+            "name": "CurrentLoadNice",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadIdle:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load Idle"
+            },
+            "name": "CurrentLoadIdle",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadIrq:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load Irq"
+            },
+            "name": "CurrentLoadIrq",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadRaw:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load Raw"
+            },
+            "name": "CurrentLoadRaw",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadUserRaw:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load User Raw"
+            },
+            "name": "CurrentLoadUserRaw",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadSystemRaw:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load System Raw"
+            },
+            "name": "CurrentLoadSystemRaw",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadNiceRaw:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load Nice Raw"
+            },
+            "name": "CurrentLoadNiceRaw",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadIdleRaw:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load Idle Raw"
+            },
+            "name": "CurrentLoadIdleRaw",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentLoadIrqRaw:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Load Irq Raw"
+            },
+            "name": "CurrentLoadIrqRaw",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:CurrentFullLoad:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Current Full Load"
+            },
+            "name": "CurrentFullLoad",
+            "schema": "double"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:FileSystem:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "File System"
+            },
+            "name": "FileSystem",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:FileSystemType:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "File System Type"
+            },
+            "name": "FileSystemType",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:FileSystemSize:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "File System Size"
+            },
+            "name": "FileSystemSize",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:FileSystemUsedInBytes:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "File System Used In Bytes"
+            },
+            "name": "FileSystemUsedInBytes",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:FileSystemUse:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "File System Use"
+            },
+            "name": "FileSystemUse",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:FileSystemMount:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "File System Mount"
+            },
+            "name": "FileSystemMount",
+            "schema": "string"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:ProcessesAll:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Processes All"
+            },
+            "name": "ProcessesAll",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:ProcessesRunning:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Processes Running"
+            },
+            "name": "ProcessesRunning",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:ProcessesBlocked:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Processes Blocked"
+            },
+            "name": "ProcessesBlocked",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:ProcessesSleeping:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Processes Sleeping"
+            },
+            "name": "ProcessesSleeping",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:ProcessesUnknown:1",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Processes Unknown"
+            },
+            "name": "ProcessesUnknown",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:DockerContainersRunning:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Docker Containers Running"
+            },
+            "name": "DockerContainersRunning",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:DockerContainersPaused:2",
+            "@type": "Telemetry",
+            "displayName": {
+              "en": "Docker Containers Paused"
+            },
+            "name": "DockerContainersPaused",
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:SendingFrequency:2",
+            "@type": "Property",
+            "displayName": {
+              "en": "Sending Frequency"
+            },
+            "name": "SendingFrequency",
+            "writable": true,
+            "schema": "integer"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:DeviceOwner:3",
+            "@type": "Property",
+            "displayName": {
+              "en": "Device Owner"
+            },
+            "name": "DeviceOwner",
+            "writable": true,
+            "schema": "string"
+          },
+          {
+            "@id": "urn:bluegitMonitorData:MonitorData:Location:3",
+            "@type": "Property",
+            "displayName": {
+              "en": "Location"
+            },
+            "name": "Location",
+            "writable": true,
+            "schema": "geopoint"
+          }
+        ]
+      }
+    }
+  ],
+  "displayName": {
+    "en": "System Information Collector"
+  },
+  "@context": [
+    "http://azureiot.com/v1/contexts/IoTModel.json"
+  ]
+}
