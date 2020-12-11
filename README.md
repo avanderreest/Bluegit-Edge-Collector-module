@@ -1,7 +1,8 @@
 ## Device Monitoring Twin Application for the Bluegit Device Control Center service
 This application is part of the Bluegit Device control center service platform.
 
-This application can be run on an IoT Edge Runtime device in 3 modes:
+This application can be run on an IoT Edge Runtime device in 3 modes: 
+
 
 ## As a Standalone node module.
 
