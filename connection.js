@@ -2,7 +2,7 @@
 // Licensed under the MIT license.
 
 // BluegitSystemInformationCollector_135_nodejs_sample/connection.js
-
+  
 var iotHubTransport = require('azure-iot-device-mqtt').Mqtt;
 var Client = require('azure-iot-device').Client;
   
