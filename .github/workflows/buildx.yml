@@ -31,6 +31,6 @@ jobs:
     - name: docker build collector
       run: |
         docker buildx build --push \
-            --tag ghcr.io/avanderreest/infocollector:latest \
+            --tag ghcr.io/avanderreest/infocollectormodule:latest \
             --platform linux/amd64,linux/arm64 .
  
