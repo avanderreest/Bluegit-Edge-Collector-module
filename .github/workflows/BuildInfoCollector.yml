@@ -25,7 +25,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: docker build collector
       run: |
-        docker build . -t ghcr.io/avanderreest/infocollectorModule:latest 
+        docker build . -t ghcr.io/avanderreest/infocollectormodule:latest 
     - name: docker push
       run: |
-        docker push ghcr.io/avanderreest/infocollectorModule:latest
+        docker push ghcr.io/avanderreest/infocollectormodule:latest
