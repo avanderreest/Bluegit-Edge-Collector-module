@@ -10,7 +10,7 @@ const { update } = require('./DeviceInformation_3eb/cloudAndDeviceProperties.js'
   
 var DeviceInformation_3eb = {
   'property' : require('./DeviceInformation_3eb/cloudAndDeviceProperties.js')
-};
+}; 
 
 var SystemInformationCollectorV2_40y = {
   'telemetry' : require('./SystemInformationCollectorV2_40y/telemetryStateEvent.js'),
